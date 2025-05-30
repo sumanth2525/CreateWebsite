@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfolio Site Builder</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="builder">
+  <header class="topbar"><h1>Portfolio Site Builder</h1></header>
+
+  <main class="container">
+    <form id="builderForm" class="card">
+      <h2 class="center">Brand & Theme</h2>
+      <label class="field">Full Name
+        <input id="name" type="text" required>
+      </label>
+      <label class="field">Role / Title
+        <input id="role" type="text" required>
+      </label>
+      <label class="field">One‑line Tagline
+        <input id="tagline" type="text" required>
+      </label>
+      <label class="field">Accent Colour
+        <input id="accent" type="color" value="#7a004b">
+      </label>
+
+      <h2 class="center">Profile Picture</h2>
+      <input id="profile" type="file" accept="image/*" required>
+
+      <h2 class="center">About Me</h2>
+      <textarea id="about" rows="4" required></textarea>
+
+      <h2 class="center">Social Links</h2>
+      <div class="grid2">
+        <input id="linkEmail"    type="url" placeholder="mailto:you@example.com">
+        <input id="linkLinkedIn" type="url" placeholder="https://linkedin.com/in/...">
+        <input id="linkGitHub"   type="url" placeholder="https://github.com/...">
+        <input id="linkTwitter"  type="url" placeholder="https://twitter.com/...">
+        <input id="linkLeet"     type="url" placeholder="https://leetcode.com/...">
+        <input id="linkFacebook" type="url" placeholder="https://facebook.com/...">
+      </div>
+
+      <h2 class="center">Education (one per line)</h2>
+      <textarea id="education" rows="3"></textarea>
+
+      <h2 class="center">Experience (one per line)</h2>
+      <textarea id="experience" rows="3"></textarea>
+
+      <button class="btnPrimary full" type="submit">Save & Preview →</button>
+    </form>
+  </main>
+  <footer class="center small">© 2025 Builder Demo</footer>
+
+  <script src="js/builder.js"></script>
+</body>
+</html>
